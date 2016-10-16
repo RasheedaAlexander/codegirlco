@@ -16,14 +16,11 @@
  *= require social-share-button
  */
 
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "posts";
 @import "social-share-button";
 
-$black: #000000;
-$white: #ffffff;
 
 .jumbotron {
   background:
@@ -44,6 +41,6 @@ $white: #ffffff;
     height: 309px;
   }
   small {
-    color: $white;
+    color: #ffffff;
   }
 }
