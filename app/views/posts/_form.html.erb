@@ -1,0 +1,37 @@
+<%= form_for @post do |f| %>
+<!-- Check post for errors -->
+<% if @post.errors.any? %>
+<!-- show the number of errors
+if single error, will say error
+if plural will say errors -->
+<h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving: </h2>
+<ul>
+  <% @post.errors.full_messages.each do |msg| %>
+  <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+    <h2><%= f.label 'Image URL' %></h2>
+    <%= f.text_field :img %>
+    <br>
+    <br>
+    <h2><%= f.label :title %></h2>
+    <%= f.text_field :title %>
+    <br>
+    <br>
+
+    <h2><%= f.label :content %></h2>
+    <%= f.text_area :content %>
+    <br>
+    <br>
+
+    <%= f.submit %>
+
+    </div>
+  </div>
+</div>
+<% end %>
