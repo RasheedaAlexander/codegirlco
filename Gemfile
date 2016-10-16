@@ -9,6 +9,12 @@ gem 'pg', '~> 0.18'
 # Use bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha4'
 
+# Social sharing buttons
+gem 'social-share-button'
+
+# Use bootstrap form for rails
+gem 'bootstrap_form'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
