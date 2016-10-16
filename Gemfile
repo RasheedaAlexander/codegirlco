@@ -6,8 +6,8 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 
-# Use bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha4'
+# Use Bootstrap sass
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # Social sharing buttons
 gem 'social-share-button'
