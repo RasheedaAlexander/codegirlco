@@ -159,21 +159,13 @@ body {
     }
   }
 }
-.social-share-button .ssb-twitter {
-    background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
-    /* height: 20px; */
-    background-size: cover;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-}
 .social-share-button .ssb-icon {
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* background-size: 18px 18px; */
-    display: inline-block;
-    height: 30px;
-    background-size: cover;
-    border-radius: 100%;
-    width: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-size: 18px 18px; */
+  display: inline-block;
+  height: 30px;
+  background-size: cover;
+  border-radius: 100%;
+  width: 50px;
 }

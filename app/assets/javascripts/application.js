@@ -33,4 +33,13 @@ $(document).ready(function(){
   });
 
   // Display 5 recent posts
+
+  // Change size of social share icons
+  $( ".ssb-twitter, .ssb-facebook, .ssb-google_plus, .ssb-tumblr, .ssb-pinterest, .ssb-email, .ssb-linkedin, .ssb-reddit" ).css({
+    'background-size': 'cover';
+    'border-radius': '100%';
+    'width': '50px';
+    'height': '50px';
+});
+
 });
