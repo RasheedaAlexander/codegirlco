@@ -1,27 +1,27 @@
 class PostsController < ApplicationController
-before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :find_post, only: [:show, :edit, :update, :destroy]
   def index
     @posts = Post.all
+  end
+
+  def show
   end
 
   def new
     @post = Post.new
   end
 
+  def edit
+  end
+
   def create
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to @post, notice: "Go Rasheeda, it's Shebert Day! Your post was successfully saved."
+      redirect_to @post, notice: "Your post was successfully saved"
     else
       render 'new', notice: "Unable to save your post"
     end
-  end
-
-  def show
-  end
-
-  def edit
   end
 
   def update
