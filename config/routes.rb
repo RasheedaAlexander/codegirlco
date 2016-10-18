@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   # creates seven different routes in your application, all mapping to the Posts controller
   resources :posts
   root to: 'posts#index'
+
+  resources :posts, only: [:show]
+  root to: "posts#show"
 end
