@@ -3,9 +3,8 @@
 <head>
   <title>Blog</title>
   <%= csrf_meta_tags %>
-
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag 'posts' %>
+<!-- turbolinks checks if an asset has been updated and if so loads it into the page -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
