@@ -51,4 +51,12 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Stop public/assets from being source of js/css in development mode
+  config.serve_static_files = false
+
+# in development mode Rails will look there (but it will not find anything, as you will not compile assets in development (this is indeed what you are trying to do -- not compile assets
+  config.assets.prefix = "/assets_dev"
+
+
 end
