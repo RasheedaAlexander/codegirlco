@@ -53,7 +53,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # Stop public/assets from being source of js/css in development mode
-  config.serve_static_files = false
+config.public_file_server.enabled = false
 
 # in development mode Rails will look there (but it will not find anything, as you will not compile assets in development (this is indeed what you are trying to do -- not compile assets
   config.assets.prefix = "/assets_dev"
