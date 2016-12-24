@@ -1,155 +1,174 @@
-// // Place all the styles related to the Posts controller here.
-// // They will automatically be included in application.css.
-// // You can use Sass (SCSS) here: http://sass-lang.com/
-//
-// @import "https://fonts.googleapis.com/css?family=Oranienbaum";
-// @import "https://fonts.googleapis.com/css?family=Raleway";
-//
-// $black: #000000;
-// $white: #ffffff;
-// $size: 100px;
-// /* navigation menu style in both .navbar & navbar default */
-// .navbar {
-//   font-size: 30px;
-//   // Animation
-//   -webkit-transition: all 0.4s ease;
-//   transition: all 0.4s ease;
-//   .navbar-brand {
-//     padding-top: 0;
-//     // font-size: 30px;
-//     color: $black;
-//     width: 300px;
-//     img {
-//       height: 50px;
-//       width: 70px;
-//       display: inline;
-//     }
-//   }
-//   h1 {
-//     text-align: center;
-//     display: inline;
-//   }
-//   .navbar-right{
-//     padding-top: 20px;
-//     font-size: 25px;
-//   }
-// }
-// .navbar-default {
-//   background-color: $white;
-//   opacity: 0.7;
-//   height: $size;
-//   box-shadow: 5px 5px 5px #3e3c3c;
-// }
-// .navbar-default .navbar-nav > li > a {
-//   color: $black;
-// }
-// .navbar-default .navbar-nav > li > a:active {
-//   text-decoration: underline;
-//   border-right: 2px solid $black;
-// }
-// .navbar-default .navbar-nav > li > a:hover {
-//   font-weight: bold;
-// }
-// .navbar.shrink {
-//   min-height: 35px;
-// }
-// #bs-example-navbar-collapse-1 {
-//   text-align: center;
-//   li {
-//     padding: 15px;
-//   }
-// }
-// .navbar-header {
-//   padding-top: 15px;
-// }
-//
-// body {
-//   font-family: 'Oranienbaum', sans-serif;
-//   color: $black;
-//
-//   h1 {
-//     font-family: 'Oranienbaum', serif;
-//     font-size: 30px;
-//     line-height: 38px;
-//     font-style: normal;
-//     font-weight: 400;
-//     letter-spacing: 0px;
-//   }
-//   p {
-//     font-family: 'Raleway', sans-serif;
-//   }
-//   .outer {
-//     height: 625px;
-//     img {
-//       height: 450px;
-//     }
-//   }
-//   .inner {
-//     height: 530px;
-//     img {
-//       height: 375px;
-//     }
-//   }
-//   /* SHOW PAGE */
-//   .container-fluid > .row {
-//     margin: 150px auto 0 auto;
-//     .col-md-8 {
-//       text-align: left;
-//       padding: 0;
-//       img {
-//         width: 100%;
-//         height: auto;
-//         padding-right: 0;
-//       }
-//       h1 {
-//         font-size: 36px;
-//       }
-//     }
-//     .col-md-4 {
-//       height: auto;
-//       h1 {
-//         margin-top: 0;
-//       }
-//       img {
-//         width: 150px;
-//         height: 150px;
-//         margin-right: 15px;
-//       }
-//       ul {
-//         padding-left: 0;
-//         li {
-//           list-style-type: none;
-//         }
-//         h2 {
-//           display: inline;
-//         }
-//       }
-//     }
-//     /* COMMENT SECTION
-//     */
-//     #disqus_thread {
-//       position: relative;
-//       color: black;
-//       font-family: 'Oranienbaum', sans-serif;
-//     }
-//     #disqus_thread:after {
-//       content: "";
-//       display: block;
-//       height: 55px;
-//       width: 100%;
-//       position: absolute;
-//       bottom: 0;
-//       background: white;
-//     }
-//   }
-// }
-// .social-share-button .ssb-icon {
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   /* background-size: 18px 18px; */
-//   display: inline-block;
-//   height: 30px;
-//   background-size: cover;
-//   border-radius: 100%;
-//   width: 30px;
-// }
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "https://fonts.googleapis.com/css?family=Oranienbaum";
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+$black: #000000;
+$white: #ffffff;
+$size: 100px;
+/* navigation menu style in both .navbar & navbar default */
+.navbar {
+  font-size: 30px;
+  // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-bottom:0;
+  .navbar-brand {
+    padding-top: 0;
+    // font-size: 30px;
+    color: $black;
+    width: 300px;
+    img {
+      height: 50px;
+      width: 70px;
+      display: inline;
+    }
+  }
+  h1 {
+    text-align: center;
+    display: inline;
+  }
+  .navbar-right{
+    font-size: 25px;
+  }
+}
+.navbar-default {
+  background-color: #ffffff;
+  opacity: 0.7;
+  height: 90px;
+  // box-shadow: 5px 5px 5px #3e3c3c;
+}
+.navbar-default .navbar-nav > li > a {
+  color: $black;
+}
+.navbar-default .navbar-nav > li > a:active {
+  text-decoration: underline;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  // font-weight: bold;
+  border-top: 3px solid $black;
+  border-bottom: 3px solid $black;
+}
+.navbar.shrink {
+  min-height: 35px;
+}
+#bs-example-navbar-collapse-1 {
+  text-align: center;
+  li {
+    padding: 15px;
+  }
+}
+.navbar-header {
+  padding-top: 15px;
+}
+
+body {
+  font-family: 'Oranienbaum', sans-serif;
+  color: $black;
+
+  h1 {
+    font-family: 'Oranienbaum', serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  h2 {
+    font-family: 'Oranienbaum', serif;
+    font-size: 28px;
+  }
+  p {
+    font-family: 'Raleway', sans-serif;
+  }
+  // .outer {
+  //   height: 625px;
+  //   img {
+  //     height: 450px;
+  //   }
+  // }
+  // .inner {
+  //   height: 530px;
+  //   img {
+  //     height: 375px;
+  //   }
+  // }
+  /* SHOW PAGE */
+  .container {
+    .row {
+      padding-bottom: 20px;
+      img {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+      }
+      .col-md-8 {
+        text-align: left;
+        padding: 0;
+        h1 {
+          font-size: 36px;
+        }
+      }
+      .col-md-4 {
+        height: auto;
+        h1 {
+          margin-top: 0;
+        }
+        img {
+          width: 150px;
+          height: 150px;
+          margin-right: 15px;
+        }
+        ul {
+          padding-left: 0;
+          li {
+            list-style-type: none;
+          }
+          h2 {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  /* COMMENT SECTION
+  */
+  #disqus_thread {
+    position: relative;
+    color: black;
+    font-family: 'Oranienbaum', sans-serif;
+  }
+  #disqus_thread:after {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: white;
+  }
+}
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-size: 18px 18px; */
+  display: inline-block;
+  height: 30px;
+  background-size: cover;
+  border-radius: 100%;
+  width: 30px;
+}
+
+/* NEW & EDIT PAGES */
+#form {
+  text-align: left;
+}
+#post_content {
+  max-width: 600px;
+  width: 100%;
+  height: 300px;
+}
+
+/* END NEW & EDIT PAGE */

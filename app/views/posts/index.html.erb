@@ -1,19 +1,24 @@
 <!-- <h1>Blog Posts</h1> -->
-  <div class="jumbotron">
-    <div class="container">
-<h1>"Don't go JSON Waterfalls.
-  <!-- <small>Please stick to the Ruby on the Rails that you're used to. I know that you're going to have it your way or Node.js at all but I think you're moving too fast" - Rasheeda</small> -->
-</h1>
-  </div>
+<div class="jumbotron">
+  <h1>"Don't go JSON Waterfalls. <br>
+    <small>Please stick to the Ruby on the Rails that you're used to. I know that you're going to have it your way or Node.js at all but I think you're moving too fast" </small>
+  </h1>
+</div>
 
+<div class="container">
   <div class="row">
-    <% @posts.each do |post| %>
-    <div class="col-md-4">
+    <div class="col-md-8 col-sm-12">
+      <h1>Recent Posts</h1>
+      <hr>
+
+      <% @posts.each do |post| %>
       <%= image_tag post.img %>
       <h1><%= post.title %></h1>
       <p><%= post.content %></p>
       <br>
       <%= link_to 'Read More', post_path(post) %>
+      <hr>
+
     </div>
     <% end %>
   </div>
