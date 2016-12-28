@@ -37,6 +37,10 @@ class PostsController < ApplicationController
     redirect_to @post
   end
 
+  def should_generate_new_friedly_id?
+     slug.blank? || title_changed?
+  end﻿
+  
   private
 
     def post_params
