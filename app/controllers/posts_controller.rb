@@ -37,6 +37,10 @@ class PostsController < ApplicationController
     redirect_to @post
   end
 
+  def should_generate_new_friedly_id?
+     slug.nil? || title_changed?
+  end﻿
+
   private
 
     def post_params
@@ -44,6 +48,6 @@ class PostsController < ApplicationController
     end
 
   def find_post
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 end
