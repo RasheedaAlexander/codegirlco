@@ -11,8 +11,7 @@ gem 'pg', '~> 0.18'
 gem 'bootstrap-sass', '~> 3.3.6'
 
 # Social sharing buttons
-gem 'social-share-button'
-
+gem 'shareable'
 # Use bootstrap form for rails
 gem 'bootstrap_form'
 

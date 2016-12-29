@@ -5,10 +5,11 @@
       <h1><%= @post.title %></h1>
       <p><%= @post.content %></p>
       <%= link_to 'Back', root_path %>
+      <%= link_to 'Edit', edit_post_path(@post) %>
 
       <br>
       <br>
-      <%= social_share_button_tag(@post.title) %>
+      <%= render_shareable %>
       <br>
       <br>
       <%= render 'comments' %>

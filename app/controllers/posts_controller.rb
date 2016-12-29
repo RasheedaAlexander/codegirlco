@@ -27,15 +27,15 @@ class PostsController < ApplicationController
 
   def update
     if @post.update post_params
-      redirect_to @post, notice: "Your post was successfully updated"
+      redirect_to @post, notice: "Your post has been successfully updated"
     else
       render 'edit'
     end
   end
 
   def destroy
-    @post.destroy
-    redirect_to @post
+    @post.destroy!
+    redirect_to @post, notice: "Your post has been deleted"
   end
 
   private
