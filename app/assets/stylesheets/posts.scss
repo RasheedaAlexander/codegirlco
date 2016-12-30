@@ -154,23 +154,44 @@ body {
     background: white;
   }
 }
-nav.share {display:inline-block;} /* shareable's nav tag */
-nav.share div {float:left;}
-// nav.share iframe {border:0; margin-top:0; padding-top:0;} /* if using medium sized buttons */
-// #___plusone_0 {font-size: default !important;}
-// // .fb_iframe_widget span { vertical-align: top; }
-// // .fb_edge_widget_with_comment { vertical-align: top;}
-// // .fb-like{display:inline-block}
-// * html .fb-like{display:inline}/* ie6 inline block fix*/
-// *+html .fb-like{display:inline}/* ie7 inline block fix*/
-
-/* NEW & EDIT PAGES */
-#form {
-  text-align: left;
+nav.share {
+  display:inline-block;
+} /* shareable's nav tag */
+nav.share div {
+  float:left;
 }
-#post_content {
+nav.share iframe {
+  border:0; margin:0 2px; padding-top:0;
+} /* if using medium sized buttons */
+#___plusone_0 {font-size: default !important;
+}
+// .fb_iframe_widget span { vertical-align: bottom; }
+.fb_edge_widget_with_comment {
+  vertical-align: top;
+}
+.fb-like{
+  display:inline-block;
+  margin: 2px 2px 0 0;
+}
+* html .fb-like{
+  display:inline
+}/* ie6 inline block fix*/
+*+html .fb-like{
+  display:inline
+}/* ie7 inline block fix*/
+.fb-like .fb_iframe_widget {
+  margin: 2px 2px 0 0;
+}
+/* NEW & EDIT PAGES */
+
+#form {
+  text-align: center;
+}
+#post_content, #post_img, #post_title {
   max-width: 600px;
   width: 100%;
+}
+#post_content {
   height: 300px;
 }
 
