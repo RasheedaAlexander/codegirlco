@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :posts
   root to: 'posts#index'
 
-  resources :posts, only: [:show]
-  root to: "posts#show"
+  resources :posts
+  root to: "posts#index"
+
+  get '*path' => redirect('/')
 end
