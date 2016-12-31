@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+# User must be signed in to access every page except index and show pages
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @posts = Post.all.order("created_at desc").paginate(:page => params[:page], :per_page => 1)
 
@@ -40,9 +43,9 @@ class PostsController < ApplicationController
 
   private
 
-    def post_params
-      params.require(:post).permit(:title, :img, :content, :slug)
-    end
+  def post_params
+    params.require(:post).permit(:title, :img, :content, :slug)
+  end
 
   def find_post
     @post = Post.friendly.find(params[:id])

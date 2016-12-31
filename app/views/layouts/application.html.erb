@@ -3,7 +3,7 @@
 <head>
   <title>CodeGirlCo.</title>
   <%= csrf_meta_tags %>
-<!-- turbolinks checks if an asset has been updated and if so loads it into the page -->
+  <!-- turbolinks checks if an asset has been updated and if so loads it into the page -->
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag 'posts' %>
 </head>
@@ -19,7 +19,7 @@
       </button>
       <a class="navbar-brand" href="#">
         <!-- <img src="https://i.gyazo.com/ffaefdc3959ffaa23e59c73aeb782b77.png"> -->
-      <h1>CodeGirlCo.</h1>
+        <h1>CodeGirlCo.</h1>
       </a>
     </div>
 
@@ -39,6 +39,10 @@
 </div><!-- /.container-fluid -->
 </nav>
 <body>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <%= yield %>
   <%= javascript_include_tag 'application.js', 'data-turbolinks-track': 'reload' %>
 
