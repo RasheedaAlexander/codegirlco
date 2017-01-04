@@ -6,12 +6,15 @@
 
 @import "https://fonts.googleapis.com/css?family=Oranienbaum";
 @import "https://fonts.googleapis.com/css?family=Raleway";
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
 
 $black: #000000;
 $white: #ffffff;
 $size: 100px;
 /* navigation menu style in both .navbar & navbar default */
 .navbar {
+  font-family: 'Oranienbaum', serif;
   font-size: 30px;
   // Animation
   -webkit-transition: all 0.4s ease;
@@ -68,7 +71,7 @@ $size: 100px;
 }
 
 body {
-  font-family: 'Oranienbaum', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: $black;
 
   h1 {
